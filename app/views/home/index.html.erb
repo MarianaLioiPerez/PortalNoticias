@@ -1,0 +1,12 @@
+<h1>BIENVENIDO</h1>
+<h4>a las noticias del mundo</h4>
+
+<%= link_to 'portal noticias', news_index_path%>
+
+<% @news.each do |news| %>
+  <div class="news-item">
+    <%= news.image%>
+    <h2><%= news.title %></h2>
+    <p><%= news.description %></p>
+  </div>
+<% end %>
