@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  image: MyString
-  title: MyString
-  description: MyText
+  image: https://assets.megamediaradios.fm/sites/3/2023/06/Diseno-sin-titulo-47-974x547.png
+  title: De gato rescatado a animalito de terapia
+  description: Dentro de los hogares, no cabe duda de que los animalitos son una gran fuente de cariño amor':'Pero además, también lo son en otros lugares en donde las personas pueden acumular cansancio o estrés. Para solucionar esos problemas, está Duke Ellington Morris, un gato de terapia que ronronea en el aeropuerto de San Francisco, Estados Unidos.
   user: one
 
 two:
-  image: MyString
-  title: MyString
-  description: MyText
+  image: https://assets.megamediaradios.fm/sites/2/2021/08/0858deef-fonda-parque-ohiggins-aton-768x512.jpeg
+  title: Ya se confirmaron las fondas del Parque OHiggins 2023
+  description: Más exactamente cinco días, porque las fondas Parque OHiggins 2023 comenzarán el viernes 15 y se extenderán hasta el martes 19 de septiembre que cada año reúne en este parque ramadas, gastronomía, música en vivo, espectáculos familiares, juegos y varias tradiciones.De hecho, se confirmó también que la parrilla tendrá más de 80 artistas, que pronto se anunciarán, en tres escenarios, y además habrá un cuecódromo.
   user: two

@@ -1,0 +1,14 @@
+<h1>New comment</h1>
+
+<%= render "form", comment: @comment %>
+
+<br>
+
+<%= form_with(model: [@news, @comment]) do |form| %>
+  <%= form.text_area :content, placeholder: "Leave a comment..." %>
+  <%= form.submit "Submit Comment" %>
+<% end %>
+
+<div>
+  <%= link_to "Back to comments", comments_path %>
+</div>

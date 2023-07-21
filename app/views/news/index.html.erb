@@ -1,13 +1,26 @@
-<p style="color: green"><%= notice %></p>
+
+<div class="container-fluid noticia"> 
+    <p style="color: green "><%= notice %></p>
+
+    <div class="noticia2"><%= link_to "Nueva Noticia", new_news_path , class:"nueva-noti" %></div>
 
 
-<div id="news">
-  <% @news.each do |news| %>
-    <%= render news %>
-    <p>
-      <%= link_to "Show this news", news %>
-    </p>
-  <% end %>
+    <div class="container text-center">
+      <div class="row align-items-start ">
+        <div class="col">
+          <% @news.each do |news| %>
+            <div class="card d-inline-flex" style="width: 18rem;">
+              <img src="<%= news.image %>" class="card-img-top" alt="...">
+                <div class="card-body align-items-center">
+                  <h5 class="card-title"><%= news.title %></h5>
+                  <p class="card-text"><%= news.description %></p>
+                  <%= link_to "Show this news", news, class: "btn btn-primary" %>
+                </div>
+            </div>
+          <% end %>
+         </div>
+      </div>
+
+    </div>
+
 </div>
-
-<%= link_to "New news", new_news_path %>

@@ -1,10 +1,27 @@
-<p style="color: green"><%= notice %></p>
 
-<%= render @news %>
+<div class="show-news">
+    <p style="color: green"><%= notice %></p>
+    
+    <div class="container noticia-texto"> <%= render @news %></div>
 
-<div>
-  <%= link_to "Edit this news", edit_news_path(@news) %> |
-  <%= link_to "Back to news", news_index_path %>
+    <div>
+      <%= link_to "Back to news", news_index_path %>
+      
 
-  <%= button_to "Destroy this news", @news, method: :delete %>
+      <div>
+      <% @comments.each do |comment| %>
+        <p><%= comment.content %></p>
+      <% end %>
+    </div>
+      
+      <% if user_signed_in? %>
+          <% if current_user.id == @news.user_id %>
+          <%= link_to "Edit this news", edit_news_path(@news) %>
+          <%= button_to "Destroy this news", @news, method: :delete %>
+          <%end%>
+
+
+      <%end%>
+
+    </div>
 </div>

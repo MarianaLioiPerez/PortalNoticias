@@ -1,9 +1,11 @@
-<h1>New news</h1>
+<div class="nueva-noticia">
+    <h1 class="noticia-new">Nueva Noticia</h1>
 
-<%= render "form", news: @news %>
+    <%= render "form", news: @news , class:"formato-ingreso" %>
 
-<br>
+    <br>
 
-<div>
-  <%= link_to "Back to news", news_index_path %>
+    <div>
+      <%= link_to "Back to news", news_index_path %>
+    </div>
 </div>

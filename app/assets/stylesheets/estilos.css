@@ -1,0 +1,130 @@
+
+
+.home {
+    background-image: url('foto-fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 670px;
+    margin: 0px;
+  }
+
+
+  /*   font-family: 'Lugrasimo', cursive;
+      font-family: 'Rubik', sans-serif;    */
+
+
+h1{
+  color:white;
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Lugrasimo', cursive;
+  font-size: 42pt;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.sub{
+  color: white;
+  text-align: center;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  font-family: 'Rubik', sans-serif; 
+}
+
+.link-portal{
+  text-decoration: none !important;
+  color: #A1C2F1;
+  text-align: center;
+  font-family: 'Rubik', sans-serif, cursive;
+  font-weight: 200;
+  padding-top: 8px;
+}
+
+.logo{
+  font-family: 'Rubik', sans-serif; 
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  padding-left: 24px;
+  margin-right: 50px;
+  font-size: 25px;
+}
+
+.dropdown-toggle{
+  margin-right: 50px;
+
+}
+
+.sign-up , .log-in, .edit{
+  text-align: center;
+  margin-top: 90px;
+}
+
+.texto-sign, .text-log, .edit-news{
+  font-family: 'Lugrasimo', cursive;
+  padding-bottom: 30px;
+  color: black;
+}
+
+.field{
+  padding-bottom: 20px;
+}
+
+.nueva-noticia{
+  text-align: center;
+}
+
+.noticia-new{
+  font-family: 'Lugrasimo', cursive;
+  color: black;
+  font-size: 38px;
+  padding-top: 80px;
+}
+
+.formato-ingreso{
+  text-align: center;
+  height: 340px;
+  width: 400px;
+}
+
+.field2{
+  padding-top: 15px;
+}
+
+.boton-enviar{
+  margin-top: 20px;
+}
+
+.nueva-noti{
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  color: black;
+}
+
+.noticia2{
+  margin-bottom: 40px;
+  margin-left: 20px;
+  font-weight: 700;
+  font-family: 'Rubik', sans-serif;
+  font-size: 23px;
+}
+
+.show-news{
+  text-align: center;
+}
+
+.noticia-texto{
+  width: 60%;
+  height: 80%;
+  align-items: center;
+}
+
+.card-img-top{
+  object-fit: fill;
+}
+
+.card{
+  margin: 30px;
+}

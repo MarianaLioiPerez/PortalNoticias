@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-    <p class= "d-block p-0 m-0 logo">TRN</p>
+   <%= link_to "TRN", home_index_path, class:"d-block p-0 m-0 logo" %>
      <p class= "d-block p-0 m-0 sub-logo">the rial news</p>
      </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,10 +19,14 @@
                       <% end %>
           </a>
          <ul class="dropdown-menu">
-            <li><%= button_to 'Cerrar sesión', destroy_user_session_path, class: 'dropdown-item', method: :delete %></li>
-            <li><%= link_to 'Iniciar sesión', new_user_session_path, class: 'dropdown-item'%></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><%= link_to 'Registro', new_user_registration_path, class: 'dropdown-item'%></li>
+           <% if user_signed_in? %>
+                <li><%= button_to 'Cerrar sesión', destroy_user_session_path, class: 'dropdown-item', method:
+                :delete %></li>
+                <% else %>
+                <li><%= link_to 'Iniciar sesión', new_user_session_path, class: 'dropdown-item'%></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><%= link_to 'Registro', new_user_registration_path, class: 'dropdown-item'%></li>
+                <% end %>
          </ul>
         </li>
       </ul>
